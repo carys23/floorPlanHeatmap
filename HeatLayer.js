@@ -1,3 +1,6 @@
+
+
+
 'use strict';
 
 L.HeatLayer = (L.Layer ? L.Layer : L.Class).extend({
@@ -211,3 +214,15 @@ L.HeatLayer = (L.Layer ? L.Layer : L.Class).extend({
 L.heatLayer = function (latlngs, options) {
     return new L.HeatLayer(latlngs, options);
 };
+
+
+
+var heat = L.heatLayer( L.latLng([ 145, 175.2 ]), {
+  max: 0.5,
+  radius : 15, // default value
+  blur : 25, // default value
+  gradient : { 0.4: 'blue', 0.1: 'lime', 0.7: 'red'} // Values can be set for a scale of 0-1
+}).addTo(map);
+
+console.log(heat)
+console.log('heat layer', size)
