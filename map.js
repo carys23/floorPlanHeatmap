@@ -60,19 +60,3 @@ heat.draw();
 console.log(heat.draw())
 
 var heat = simpleheat(canvas);
-
-
-
-// console.log(heat.draw)
-// console.log(heat.resize)
-
-// function draw (data) {
-//           this._coords.push(data);
-//           return this.redraw();
-//       }
-
-
-
-
-
-
